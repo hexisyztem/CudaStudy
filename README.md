@@ -7,18 +7,18 @@
 ## 📅 核心学习任务清单
 
 ### 第一阶段：CUDA 编程基础 (W1 - W4)
-- [ ] **W1: 编程模型与线程管理**
+- [x] **W1: 编程模型与线程管理**
     - [x] ~~理解 Grid/Block/Thread 索引映射~~
     - [x] ~~实践：编写并正确运行 `Vector Addition`~~
     - [x] ~~掌握 `nvcc` 编译流程与错误处理机制~~
-- [ ] **W2: 内存模型与显存优化**
-    - [ ] 掌握 Global Memory 合并访问与 Shared Memory 银行冲突 (Bank Conflict)
-    - [ ] **实践：SGEMM 迭代优化** (从 Naive 版本优化至 Tiled 版本)
-- [ ] **W3: 同步机制与并行规约**
-    - [ ] 掌握线程块内同步 `__syncthreads()`
+- [x] **W2: 内存模型与显存优化**
+    - [x] ~~掌握 Global Memory 合并访问与 Shared Memory 银行冲突 (Bank Conflict)~~
+    - [x] ~~**实践：SGEMM 迭代优化** (从 Naive 版本优化至 Tiled 版本)~~
+- [x] **W3: 同步机制与并行规约**
+    - [x] ~~掌握线程块内同步 `__syncthreads()`~~
     - [ ] **实践：高性能 Parallel Reduction** (并行规约算法实现)
 - [ ] **W4: 进阶特性 (Streams/Graphs)**
-    - [ ] 掌握 `CUDA Streams` 与异步执行
+    - [x] ~~掌握 `CUDA Streams` 与异步执行~~
     - [ ] 实践：实现计算 (Kernel) 与数据传输 (H2D/D2H) 的 Overlap
 
 ### 第二阶段：性能瓶颈分析与算子融合 (W5 - W8)
@@ -47,12 +47,6 @@
     - [ ] 理解 PagedAttention 如何解决 KV-Cache 内存碎片
     - [ ] **实践任务 C (PagedAttention)**: 编写基于 Block Table 的 KV-Cache 聚合 Kernel
     - [ ] **实践任务 D (Triton)**: 将 W7/W8 的算子用 Triton 重写，对比开发效率与性能
-
-### 第四阶段：毕业项目与面试冲刺 (W12)
-- [ ] **W12: 综合实战与总结**
-    - [ ] **项目**: 选取一个开源小模型，使用自己的 Triton Kernel 替换原有算子
-    - [ ] 进行端到端 Profiling，分析加速比
-    - [ ] 复习 CUDA/C++ 八股文，准备面试冲刺
 
 ---
 

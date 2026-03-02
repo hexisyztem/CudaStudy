@@ -9,8 +9,8 @@
 ### 第一阶段：CUDA 编程基础 (W1 - W4)
 - [ ] **W1: 编程模型与线程管理**
     - [x] ~~理解 Grid/Block/Thread 索引映射~~
-    - [ ] ~~实践：编写并正确运行 `Vector Addition`~~
-    - [ ] 掌握 `nvcc` 编译流程与错误处理机制
+    - [x] ~~实践：编写并正确运行 `Vector Addition`~~
+    - [x] ~~掌握 `nvcc` 编译流程与错误处理机制~~
 - [ ] **W2: 内存模型与显存优化**
     - [ ] 掌握 Global Memory 合并访问与 Shared Memory 银行冲突 (Bank Conflict)
     - [ ] **实践：SGEMM 迭代优化** (从 Naive 版本优化至 Tiled 版本)
